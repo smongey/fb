@@ -58,8 +58,8 @@ p > a:before {
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 p > a:hover:before {
@@ -343,4 +343,8 @@ hr:after {
     margin-bottom: 25px;
   }
 
+}
+
+.hours div p {
+  text-align: center; 
 }
