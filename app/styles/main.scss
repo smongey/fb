@@ -348,3 +348,23 @@ hr:after {
 .hours div p {
   text-align: center; 
 }
+
+.days {
+  float: left;
+  width: 33%;
+}
+
+.now {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%, -50%);
+  a {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+}
+
+.avenista {
+  
+}

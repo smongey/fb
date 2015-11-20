@@ -6,7 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Featherblade</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/foundation/css/foundation.css" />
@@ -30,17 +48,13 @@
     </div>
 
     <div id="page-content">
-        <!--div class="row">
-          <div class="panel callout radius">
-          @@include('partials/_nav.html')
-
-          @@include('partials/_content.html')
-          </div>
-        </div-->
+      <div class="now">
+        <a href="JavaScript:newPopup('http://cloudeu01.avenista.net/Featherblade, Dublin/Bookings/featherblade'); ">Book a Table</a>
+      </div>
       <div class="row">
         <div class="small-12 large-7 columns rotatorContent centered">
           <img class="showLogo" src="images/logo.png">
-          <h1 class="textIntro Portrait-Regular-Web"> Not all steaks are created equal. At Featherblade we find the best techniques to turn often overlooked – yet delicious – cuts into something special. Our philosophy is simple; all hail the divine bovine!</h1>
+          <h1 class="textIntro Portrait-Regular-Web">Not all steaks are created equal. At Featherblade we find the best techniques to turn often overlooked – yet delicious – cuts into something special. Our philosophy is simple; all hail the divine bovine!</h1>
         </div>
       </div> <!-- /.row --> 
     </div> <!-- /.page-content -->
@@ -55,8 +69,7 @@
       <div id="menuInfo" class="Portrait-Regular-Web">
         <div class="row">
           <div class="small-12 medium-4 large-4 columns text-center clearfix nofloat">
-            <p class="address">51 Dawson Street, Dublin 2<br/>All bookings to<br/><a href="mailto:book@featherblade.ie">book@featherbalde.ie</a><br/>
-            01 679 8814<br/><a href="sample-menu-2.pdf" target="_blank">Menu</a></p>
+            <p class="address">51b Dawson Street, Dublin 2<br/>All bookings to<br/><a href="mailto:book@featherblade.ie">book@featherblade.ie</a><br/><a href="tel:01 679 8814">01 679 8814</a><br/><a href="sample-menu-3.pdf" target="_blank">Menu</a>&nbsp;&nbsp;&nbsp;<a href="drinks.pdf" target="_blank">Drinks</a></p>
           </div><!-- /.columns -->
           
           <div class="small-12 medium-4 large-4 columns text-center nopadding clearfix nofloat">
@@ -78,9 +91,9 @@
             <div class="small-12 medium-4 large-4 columns nopadding clearfix"><p><a href="https://www.facebook.com/Featherblade51">Facebook</a></p></div>
             <div class="small-12 medium-4 large-4 columns nopadding clearfix"><p><a href="https://instagram.com/featherblade51/">Instagram</a></p></div>
             <div class="small-12 medium-4 large-4 columns nopadding clearfix" style="float:left"><p><a href="http://eepurl.com/by_781">Mailing List</a></p></div>
-            <div class="small-12 medium-4 large-4 columns nopadding clearfix"><p>Mon–Wed<br/>12–10</p></div>
-            <div class="small-12 medium-4 large-4 columns nopadding clearfix"><p>Thu–Sat<br/>12–late</p></div>
-            <div class="small-12 medium-4 large-4 columns nopadding clearfix" style="float:left"><p>Sunday<br/>12–8</p></div>
+            <div class="small-12 medium-4 large-4 columns nopadding days clearfix"><p>Mon–Fri<br/>12–3 / 5–10</p></div>
+            <div class="small-12 medium-4 large-4 columns nopadding days clearfix"><p>Sat<br/>12–Late</p></div>
+            <div class="small-12 medium-4 large-4 columns nopadding days clearfix"><p>Sun<br/>1–7</p></div>
           </div><!-- /.column -->
 
         </div><!-- /.row-->
@@ -94,7 +107,15 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      ga('create','UA-68956678-1');ga('send','pageview');
+    </script>
+
+    <script type="text/javascript">
+    // Popup window code
+    function newPopup(url) { popupWindow = window.open
+    (
+     url,'popUpWindow',' height=454, width=320, left=100, top=100, resizable=Yes, scrollbars=Yes, toolbar=No, menubar=no, location=no, directories=no, status=yes')
+    }
     </script>
 
     <!-- build:js scripts/vendor.js -->
@@ -109,9 +130,9 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 
 </body>
 </html>
