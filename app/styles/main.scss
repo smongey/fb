@@ -12,6 +12,12 @@
   font-stretch: normal;
 }
 
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+} 
+
 .Portrait-Regular-Web {
   font-family: 'Portrait Web';
   font-weight: 400;
@@ -363,6 +369,9 @@ hr:after {
     color: white;
     font-size: 45px;
     border-bottom: 1px solid white;
+    @include mobile {
+      font-size: 30px;
+    }
   }
 }
 
